@@ -70,7 +70,6 @@ export default {
 
 .leaflet-draw-toolbar.leaflet-control-toolbar {
   margin-top: 12px;
-  margin-top: 12px;
 }
 
 // NOTE: This is bad because it makes it impossible to use Leaflet.draw and Leaflet.toolbar on the same page.
