@@ -98,6 +98,11 @@ export default {
     color:#555;
     font-size: 20px;
   }
+  .leaflet-color-swatch{
+    & > div{
+      box-sizing: border-box;
+    }
+  }
 }
 
 .leaflet-retina {
