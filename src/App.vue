@@ -94,6 +94,10 @@ export default {
     background-image: url("images/spritesheet.png");
     background-repeat: no-repeat;
   }
+  .mdi-format-color-fill{
+    color:#555;
+    font-size: 20px;
+  }
 }
 
 .leaflet-retina {
