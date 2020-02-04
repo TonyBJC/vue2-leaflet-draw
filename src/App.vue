@@ -21,7 +21,7 @@ export default {
 
   mounted() {
     this.$nextTick(() => {
-      const map = this.$parent.$parent.$refs.map.mapObject;
+      const map = this.$parent.$parent.$parent.$parent.$parent.$refs.map.mapObject;
 
       let editActions = [
         L.Toolbar2.EditAction.Popup.Edit,
