@@ -29,7 +29,7 @@ export default {
         L.Toolbar2.Action.extendOptions({
           toolbarIcon: { 
             className: 'leaflet-color-picker', 
-            html: '<i class="fas fa-fill-drip"></i>' 
+            html: '<i class="mdi-palette"></i>'
           },
           subToolbar: new L.Toolbar2({ actions: [
             L.ColorPicker.extendOptions({ color: '#db1d0f' }),
