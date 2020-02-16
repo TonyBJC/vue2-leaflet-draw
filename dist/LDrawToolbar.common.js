@@ -1006,7 +1006,7 @@ var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__("2452"));
 var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__("e145"));
 
 // Module
-exports.push([module.i, ".leaflet-draw-toolbar.leaflet-control-toolbar{margin-top:12px}.leaflet-draw-toolbar a{background-image:none;background-repeat:no-repeat}.leaflet-retina .leaflet-draw-toolbar a{background-image:none;background-size:300px 30px}.leaflet-draw-toolbar .leaflet-draw-draw-circle,.leaflet-draw-toolbar .leaflet-draw-draw-marker,.leaflet-draw-toolbar .leaflet-draw-draw-polygon,.leaflet-draw-toolbar .leaflet-draw-draw-polyline,.leaflet-draw-toolbar .leaflet-draw-draw-rectangle,.leaflet-draw-toolbar .leaflet-draw-edit-edit,.leaflet-draw-toolbar .leaflet-draw-edit-remove{background-image:url(" + ___CSS_LOADER_URL___0___ + ");background-repeat:no-repeat}.leaflet-draw-toolbar .mdi-format-color-fill{color:#555;font-size:20px}.leaflet-draw-toolbar .leaflet-color-swatch>div{-webkit-box-sizing:border-box;box-sizing:border-box}.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-circle,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-marker,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-polygon,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-polyline,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-rectangle,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-edit-edit,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-edit-remove{background-image:url(" + ___CSS_LOADER_URL___1___ + ");background-size:300px 30px}", ""]);
+exports.push([module.i, ".leaflet-draw-toolbar.leaflet-control-toolbar{margin-top:12px}.leaflet-draw-toolbar a{background-image:none;background-repeat:no-repeat}.leaflet-retina .leaflet-draw-toolbar a{background-image:none;background-size:300px 30px}.leaflet-draw-toolbar .v-icon.mdi-format-color-fill{color:#555!important;font-size:20px!important}.leaflet-draw-toolbar .leaflet-draw-draw-circle,.leaflet-draw-toolbar .leaflet-draw-draw-marker,.leaflet-draw-toolbar .leaflet-draw-draw-polygon,.leaflet-draw-toolbar .leaflet-draw-draw-polyline,.leaflet-draw-toolbar .leaflet-draw-draw-rectangle,.leaflet-draw-toolbar .leaflet-draw-edit-edit,.leaflet-draw-toolbar .leaflet-draw-edit-remove{background-image:url(" + ___CSS_LOADER_URL___0___ + ");background-repeat:no-repeat}.leaflet-draw-toolbar .mdi-format-color-fill{color:#555;font-size:20px}.leaflet-draw-toolbar .leaflet-color-swatch>div{-webkit-box-sizing:border-box;box-sizing:border-box}.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-circle,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-marker,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-polygon,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-polyline,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-draw-rectangle,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-edit-edit,.leaflet-retina .leaflet-draw-toolbar .leaflet-draw-edit-remove{background-image:url(" + ___CSS_LOADER_URL___1___ + ");background-size:300px 30px}", ""]);
 
 
 
@@ -1094,12 +1094,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d88d939-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=1bbeb8da&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d88d939-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=d7d54098&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticStyle:{"display":"none"}})}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=1bbeb8da&
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=d7d54098&
 
 // EXTERNAL MODULE: ./node_modules/leaflet-draw/dist/leaflet.draw.js
 var leaflet_draw = __webpack_require__("20d6");
