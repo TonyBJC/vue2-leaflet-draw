@@ -81,7 +81,10 @@ export default {
   background-image: none;
   background-size: 300px 30px;
 }
-
+.leaflet-draw-toolbar .mdi-format-color-fill {
+  color: #555;
+  font-size: 20px;
+}
 .leaflet-draw-toolbar {
   .leaflet-draw-edit-edit,
   .leaflet-draw-edit-remove,
