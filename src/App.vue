@@ -18,10 +18,10 @@ export default {
       default: 'topright'
     },
   },
-
+、
   mounted() {
     this.$nextTick(() => {
-      const map = this.$parent.$parent.$parent.$parent.$parent.$refs.map.mapObject;
+      const map = this.$parent.$parent.$parent.$parent.$refs.map.mapObject;
 
       let editActions = [
         L.Toolbar2.EditAction.Popup.Edit,
@@ -29,7 +29,7 @@ export default {
         L.Toolbar2.Action.extendOptions({
           toolbarIcon: { 
             className: 'leaflet-color-picker', 
-            html: '<i class="fas fa-fill-drip"></i>' 
+            html: '<i class="v-icon notranslate mdi mdi-format-color-fill theme--dark"></i>'
           },
           subToolbar: new L.Toolbar2({ actions: [
             L.ColorPicker.extendOptions({ color: '#db1d0f' }),
@@ -93,6 +93,15 @@ export default {
   .leaflet-draw-draw-rectangle {
     background-image: url("images/spritesheet.png");
     background-repeat: no-repeat;
+  }
+  .mdi-format-color-fill{
+    color:#555;
+    font-size: 20px;
+  }
+  .leaflet-color-swatch{
+    & > div{
+      box-sizing: border-box;
+    }
   }
 }
 
