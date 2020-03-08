@@ -63,8 +63,8 @@ export default {
 
       map.on('draw:edited', function (e) {
         // var type = e.layerType,
-             const   layer = e.layer;
-        that.$emit('edited',layer)
+        //      const   e = e;
+        that.$emit('edited',e)
 
       });
     })
