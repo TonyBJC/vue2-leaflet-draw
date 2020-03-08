@@ -940,8 +940,6 @@ L.Toolbar2.DrawAction = {
         L.Toolbar2.Action.prototype.initialize.call(this, options);
       },
       enable: function enable(e) {
-        alert(1);
-
         this._handler.enable();
 
         L.Toolbar2.Action.prototype.enable.call(this, e);

@@ -17,7 +17,6 @@ L.Toolbar2.DrawAction = {
             },
 
             enable: function(e) {
-                alert(1)
                 this._handler.enable();
                 L.Toolbar2.Action.prototype.enable.call(this, e);
             },
