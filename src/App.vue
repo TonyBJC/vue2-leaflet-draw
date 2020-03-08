@@ -60,6 +60,13 @@ export default {
 
         layer.addTo(map);
       });
+
+      map.on('draw:edited', function (e) {
+        // var type = e.layerType,
+             const   layer = e.layer;
+        that.$emit('edited',layer)
+
+      });
     })
   },
 
