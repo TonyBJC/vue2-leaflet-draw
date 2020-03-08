@@ -8,8 +8,6 @@ L.Toolbar2.DrawAction = {
 
             initialize: function(map, options) {
                 var action = this;
-
-                alert(0)
                 this._handler = new Handler(map, options);
                 this._handler.on('disabled', function() {
                     action.disable();

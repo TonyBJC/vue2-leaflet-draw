@@ -19,6 +19,8 @@ export default {
     },
   },
   mounted() {
+
+    const that = this;
     this.$nextTick(() => {
       const map = this.$parent.$parent.$parent.$parent.$refs.map.mapObject;
 
@@ -47,7 +49,7 @@ export default {
         var type = e.layerType,
             layer = e.layer;
 
-        this.$emit('created',layer)
+        that.$emit('created',layer)
 
         layer.on('click', function(event) {
           this.editMode = true

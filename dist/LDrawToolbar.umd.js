@@ -931,7 +931,6 @@ L.Toolbar2.DrawAction = {
       },
       initialize: function initialize(map, options) {
         var action = this;
-        alert(0);
         this._handler = new Handler(map, options);
 
         this._handler.on('disabled', function () {
@@ -1108,12 +1107,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d88d939-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=3f959b05&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d88d939-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=bc8dd7a8&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticStyle:{"display":"none"}})}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=3f959b05&
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=bc8dd7a8&
 
 // EXTERNAL MODULE: ./node_modules/leaflet-draw/dist/leaflet.draw.js
 var leaflet_draw = __webpack_require__("20d6");
@@ -1248,6 +1247,7 @@ var actions_Delete = __webpack_require__("a9b7");
   mounted: function mounted() {
     var _this = this;
 
+    var that = this;
     this.$nextTick(function () {
       var map = _this.$parent.$parent.$parent.$parent.$refs.map.mapObject;
       var editActions = [L.Toolbar2.EditAction.Popup.Edit, L.Toolbar2.EditAction.Popup.Delete, L.Toolbar2.Action.extendOptions({
@@ -1273,7 +1273,7 @@ var actions_Delete = __webpack_require__("a9b7");
       map.on('draw:created', function (e) {
         var type = e.layerType,
             layer = e.layer;
-        this.$emit('created', layer);
+        that.$emit('created', layer);
         layer.on('click', function (event) {
           this.editMode = true;
           new L.Toolbar2.EditToolbar.Popup(event.latlng, {
