@@ -9,6 +9,7 @@ L.Toolbar2.DrawAction = {
             initialize: function(map, options) {
                 var action = this;
 
+                alert(0)
                 this._handler = new Handler(map, options);
                 this._handler.on('disabled', function() {
                     action.disable();
@@ -18,6 +19,7 @@ L.Toolbar2.DrawAction = {
             },
 
             enable: function(e) {
+                alert(1)
                 this._handler.enable();
                 L.Toolbar2.Action.prototype.enable.call(this, e);
             },
@@ -28,6 +30,7 @@ L.Toolbar2.DrawAction = {
             },
 
             setOptions: function(options) {
+                alert(options)
                 this._handler.setOptions(options);
                 L.Toolbar2.Action.prototype.setOptions.call(this, options);
             },

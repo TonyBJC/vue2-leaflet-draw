@@ -18,7 +18,6 @@ export default {
       default: 'topright'
     },
   },
-、
   mounted() {
     this.$nextTick(() => {
       const map = this.$parent.$parent.$parent.$parent.$refs.map.mapObject;
@@ -27,8 +26,8 @@ export default {
         L.Toolbar2.EditAction.Popup.Edit,
         L.Toolbar2.EditAction.Popup.Delete,
         L.Toolbar2.Action.extendOptions({
-          toolbarIcon: { 
-            className: 'leaflet-color-picker', 
+          toolbarIcon: {
+            className: 'leaflet-color-picker',
             html: '<i class="v-icon notranslate mdi mdi-format-color-fill theme--dark"></i>'
           },
           subToolbar: new L.Toolbar2({ actions: [
@@ -48,13 +47,15 @@ export default {
         var type = e.layerType,
             layer = e.layer;
 
+        this.$emit('created',layer)
+
         layer.on('click', function(event) {
           this.editMode = true
           new L.Toolbar2.EditToolbar.Popup(event.latlng, {
             actions: editActions
           }).addTo(map, layer);
         });
-        
+
         layer.addTo(map);
       });
     })
