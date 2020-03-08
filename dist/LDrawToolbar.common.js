@@ -922,6 +922,7 @@ L.Toolbar2.DrawAction = {
       },
       initialize: function initialize(map, options) {
         var action = this;
+        alert(0);
         this._handler = new Handler(map, options);
 
         this._handler.on('disabled', function () {
@@ -931,6 +932,8 @@ L.Toolbar2.DrawAction = {
         L.Toolbar2.Action.prototype.initialize.call(this, options);
       },
       enable: function enable(e) {
+        alert(1);
+
         this._handler.enable();
 
         L.Toolbar2.Action.prototype.enable.call(this, e);
@@ -941,6 +944,8 @@ L.Toolbar2.DrawAction = {
         L.Toolbar2.Action.prototype.disable.call(this);
       },
       setOptions: function setOptions(options) {
+        alert(options);
+
         this._handler.setOptions(options);
 
         L.Toolbar2.Action.prototype.setOptions.call(this, options);
@@ -1094,12 +1099,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d88d939-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=305a6238&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d88d939-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=3f959b05&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticStyle:{"display":"none"}})}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=305a6238&
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=3f959b05&
 
 // EXTERNAL MODULE: ./node_modules/leaflet-draw/dist/leaflet.draw.js
 var leaflet_draw = __webpack_require__("20d6");
@@ -1259,6 +1264,7 @@ var actions_Delete = __webpack_require__("a9b7");
       map.on('draw:created', function (e) {
         var type = e.layerType,
             layer = e.layer;
+        this.$emit('created', layer);
         layer.on('click', function (event) {
           this.editMode = true;
           new L.Toolbar2.EditToolbar.Popup(event.latlng, {
