@@ -32,6 +32,8 @@ L.Toolbar2.EditAction = {
 
             setOptions: function(options) {
                 // eslint-disable-next-line no-console
+                console.log('options')
+                // eslint-disable-next-line no-console
                 console.log(options)
                 this._handler.setOptions(options);
                 L.Toolbar2.Action.prototype.setOptions.call(this, options);

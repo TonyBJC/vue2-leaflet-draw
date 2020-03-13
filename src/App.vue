@@ -61,12 +61,14 @@ export default {
         layer.addTo(map);
       });
 
-      map.on('draw:edited', function (e) {
+      map.on('draw:editvertex', function (e) {
         // var type = e.layerType,
         //      const   e = e;
         that.$emit('edited',e.layers)
 
       });
+
+
     })
   },
 
