@@ -68,10 +68,20 @@ export default {
 
       });
 
+      map.on('draw:drawvertex', function (e) {
+        // var type = e.layerType,
+        //      const   e = e;
+        that.$emit('edited',e.poly)
+
+      });
+
+
       map.on('draw:editvertex', function (e) {
         // var type = e.layerType,
         //      const   e = e;
-        that.$emit('edited',e)
+        if(e.poly){
+          that.$emit('edited',e.poly)
+        }
 
       });
 
