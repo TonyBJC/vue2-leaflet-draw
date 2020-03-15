@@ -71,7 +71,7 @@ export default {
       map.on('draw:drawvertex', function (e) {
         // var type = e.layerType,
         //      const   e = e;
-        that.$emit('edited',e)
+        that.$emit('drawvertex',e)
 
       });
 
@@ -79,8 +79,8 @@ export default {
       map.on('draw:editvertex', function (e) {
         // var type = e.layerType,
         //      const   e = e;
-        if(e.poly){
-          that.$emit('edited',e.poly)
+        if(e){
+          that.$emit('editvertex',e)
         }
 
       });
